@@ -6,7 +6,7 @@
   "scripts": {
     "start": "atom . && webpack-dev-server",
     "prebuild": "rm -rf public && mkdir public",
-    "build": "NODE_ENV=production webpack",
+    "build": "webpack",
     "deploy": "surge -p public -d circle.surge.sh",
     "yolo": "npm run build && npm run deploy"
   },
