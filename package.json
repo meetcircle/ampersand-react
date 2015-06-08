@@ -7,7 +7,7 @@
     "start": "atom . && webpack-dev-server",
     "prebuild": "rm -rf public && mkdir public",
     "build": "NODE_ENV=production webpack",
-    "deploy": "surge -p public -d circle.surge.sh",
+    "deploy": "surge -p public -d mycircle.surge.sh",
     "yolo": "npm run build && npm run deploy"
   },
   "repository": "git@github.com:meetcircle/ampersand-react.git",

@@ -19,8 +19,13 @@ export default React.createClass({
   },
 
   onCancelClick () {
-    this.props.label.editing = false
-    this.setState(this.getInitialState())
+    const {label} = this.props
+    if (label.saved) {
+      label.editing = false
+      this.setState(this.getInitialState())
+    } else {
+      label.collection.remove(label)
+    }
   },
 
   onNameChange (event) {
@@ -37,7 +42,13 @@ export default React.createClass({
 
   onSubmitForm (event) {
     event.preventDefault()
-
+    const {label} = this.props
+    if (label.saved) {
+      label.update(this.state)
+    } else {
+      label.save(this.state)
+    }
+    label.editing = false
   },
 
   onDeleteClick (event) {
