@@ -30,6 +30,7 @@
     "local-links": "^1.4.0",
     "node-libs-browser": "^0.5.2",
     "node-uuid": "^1.4.3",
+    "octicons": "^2.2.0",
     "postcss-loader": "^0.4.4",
     "qs": "^3.1.0",
     "react": "^0.13.3",
