@@ -1,5 +1,6 @@
 import Model from 'ampersand-model'
 import githubMixin from '../helpers/github-mixin'
+import LabelCollection from './label-collection'
 
 export default Model.extend({
   url () {
@@ -26,7 +27,7 @@ export default Model.extend({
   },
 
   fetch() {
-    Model.prototype.fetch.call(this, arguments)
+    Model.prototype.fetch.apply(this, arguments)
     this.labels.fetch()
   }
 })
