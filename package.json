@@ -39,6 +39,7 @@
     "stylus-loader": "^1.2.0",
     "surge": "^0.13.0",
     "url-loader": "^0.5.6",
+    "velocity-animate": "^1.2.2",
     "webpack": "^1.9.10",
     "webpack-dev-server": "^1.9.0",
     "xhr": "^2.0.1",
